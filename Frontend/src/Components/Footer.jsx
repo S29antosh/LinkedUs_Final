@@ -21,6 +21,7 @@ export default function Footer() {
           className="footer-head"
           style={{
             display: "flex",
+            flexWrap: "wrap",
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
@@ -32,6 +33,7 @@ export default function Footer() {
             className="left-foot"
             style={{
               display: "flex",
+              flexWrap: "wrap",
               flexDirection: "row",
               justifyContent: "space-between",
               alignItems: "center",
@@ -62,6 +64,7 @@ export default function Footer() {
             <ul
               style={{
                 display: "flex",
+                flexWrap: "wrap",
                 flexDirection: "column",
                 justifyContent: "start",
                 alignItems: "start",
@@ -81,6 +84,7 @@ export default function Footer() {
                 className="footer-buttons"
                 style={{
                   display: "flex",
+                  flexWrap: "wrap",
                   flexDirection: "row",
                   justifyContent: "start",
                   alignItems: "start",
@@ -97,6 +101,7 @@ export default function Footer() {
           className="footer-main"
           style={{
             display: "flex",
+            flexWrap: "wrap",
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
@@ -108,6 +113,7 @@ export default function Footer() {
             className="footer-main-left"
             style={{
               display: "flex",
+              flexWrap: "wrap",
               flexDirection: "column",
               justifyContent: "start",
               gap: "0.5rem",
@@ -136,6 +142,7 @@ export default function Footer() {
               className="social-media"
               style={{
                 display: "flex",
+                flexWrap: "wrap",
                 flexDirection: "row",
                 justifyContent: "start",
                 alignItems: "center",

@@ -45,10 +45,15 @@ export default function AboutUs() {
               <h1>What Do We Do ?</h1>
               <div className="paragraph">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores fugit quos sit amet ipsam possimus dolore vitae
-                  quisquam totam iure, nesciunt exercitationem, quibusdam libero
-                  ducimus fuga! Incidunt libero itaque quam!
+                  LinkedUs is a proposed web-based platform designed to provide
+                  an interface for job seekers and potential employers. One can
+                  know what's new in the market and another created the
+                  market.The portal provides a doorway for seekers to find the
+                  convenient job according to the skills and knowledge they
+                  prosper at. Similarly , the providers can post their vacant
+                  jobs with description and view the list of applicants. From
+                  there the employers can choose whom to hire for their vacant
+                  job.
                 </p>
               </div>
               <button
@@ -68,11 +73,31 @@ export default function AboutUs() {
               <h1>How Can We Help ?</h1>
               <div className="paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  officia at commodi, accusantium, doloribus repellat quae
-                  dignissimos pariatur, tenetur doloremque perferendis
-                  voluptatem molestias itaque earum eveniet quaerat optio
-                  nesciunt porro.
+                  <ul>
+                    LinkedUs is a website that serves as a platform to connect
+                    job seekers with potential employers. Some of the common
+                    features of a job portal site are:
+                    <li>
+                      Authentication: Each user can register for their account
+                      and serve the website using his Login credentials.{" "}
+                    </li>
+                    <li>
+                      Job Listings: The site has a comprehensive list of job
+                      openings that job seekers can browse through.
+                    </li>
+                    <li>
+                      Job Search: The users are able to search for the job they
+                      want through Job title,salary, and other criteria.
+                    </li>
+                    <li>
+                      Candidate Profiles: Job seekers have the ability to create
+                      profiles where their personal information is stored.{" "}
+                    </li>
+                    <li>
+                      Job Posting: The Recruiter can post for the new Job
+                      openings with its description.
+                    </li>
+                  </ul>
                 </p>
               </div>
               <button
@@ -92,11 +117,13 @@ export default function AboutUs() {
               <h1>More information..</h1>
               <div className="paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reprehenderit praesentium aliquid delectus, voluptatem
-                  quisquam, nemo cumque officia quis vitae, quas a distinctio.
-                  Magnam facilis et voluptatem quo consequuntur corporis
-                  officiis.
+                  LinkedUs will digitalize the employment search and hire
+                  procedure with an easy to use interface as well.LinkedUs is
+                  expected to offer the bridge between the two sides of this
+                  seeking and providing road. Considering the increased use of
+                  technology in the job market, this project is a valuable
+                  addition to the growing number of job portals and career
+                  websites available .
                 </p>
               </div>
               <button

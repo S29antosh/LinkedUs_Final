@@ -45,7 +45,7 @@ export default function Jobpage() {
           />
           <button type="submit">Search</button>
         </form>
-        <button></button>
+       
       </div>
 
       <h1 style={{ textAlign: "center" }}>Jobs</h1>

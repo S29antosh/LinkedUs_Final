@@ -40,7 +40,7 @@ export default function Navigation_Bar(props) {
                 <Link to="/Aboutus">About Us</Link>{" "}
               </li>
               <li>
-                <Link to="/Profile">Profile </Link>{" "}
+                <Link to="/Profile">{props.profile} </Link>{" "}
               </li>
 
             </ul>

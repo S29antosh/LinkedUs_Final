@@ -11,6 +11,7 @@
 :root {
   --grey-shade: #A29C9C;
   --primary-color: #414141;
+  --main-color: #2f00ff;
 
 }
 
@@ -251,7 +252,7 @@ main {
 }
 
 .userButtons button:hover {
-  background-color: rgb(226, 83, 31);
+  background-color: var(main-color);
   color: white;
   transition: all 0.4s ease-in-out;
 

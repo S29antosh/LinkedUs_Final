@@ -89,37 +89,28 @@ const Profile = () => {
   };
 
   return (
-    <div className="profile">
-      <Navigation_Bar />
-
-      <form method="POST" encType="multipart/form-data">
+    <>
+      <div className="layout">
+        <Navigation_Bar />
         <div className="profile_container">
-          <div className="profile_left">
-            <label htmlFor="file-upload" className="Name">
-              {renderImage()}
-            </label>
+          <div class="profile_left">
+            <div className="profile_image"></div>
+            <div className="profile_name">Name Here</div>
+            <div className="profile_upload">Upload</div>
+          </div>
 
-            <input
-              name="photo"
-              type="file"
-              id="file-upload"
-              accept=".jpeg,.png,.jpg"
-              onChange={(e) => setImage(e.target.files[0])}
-            />
-            <button onClick={uploadImage} className="profile_upload">
-              Upload
-            </button>
-
-            <div className="Name">Name: {data && data.name}</div>
-            <div className="Email">Email: {data && data.email}</div>
+          <div className="profile_right">
+            <div className="Applied_dialog">
+              <div className="text_applicationstatus"></div>
+              Basic Information{" "}
+            </div>
+            <div className="match_dialog">Other Skills</div>
           </div>
         </div>
-        </form>
-
-<Footer />
-</div>
-);
+      </div>
+      <Footer />
+    </>
+  );
 };
 
 export default Profile;
-

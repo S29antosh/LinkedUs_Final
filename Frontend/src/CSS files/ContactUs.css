@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.AboutUsOverall {
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+/* .Divider {
+    background-color: black;
+    height: 0.1rem;
+
+} */
+
+
+.Mid {
+    /* background-color: rgba(217, 217, 217, 1); */
+    background-color: rgba(106, 0, 255, 0.947);
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.Mid p {
+    margin-left: 3rem;
+    color: rgb(230, 230, 234);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+
+}
+
+
+#imageee {
+    height: 95%;
+    width: 40%;
+    margin-left: 15rem;
+}
+
+#Contact{
+    margin-left: 7rem;
+    color: rgb(242, 242, 245);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.Bottom {
+    margin-top: 2rem;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.AboutUs1 {
+    background-color: rgb(227, 226, 226);
+    width: 30%;
+    height: 80%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+
+
+
+.AboutUs2 {
+    background-color: rgba(217, 217, 217, 1);
+    width: 30%;
+    height: 80%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    overflow: hidden;
+
+}
+
+.AboutUs3 {
+    background-color: rgba(217, 217, 217, 1);
+    width: 30%;
+    height: 80%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    overflow: hidden;
+
+}
+
+.AboutUs1 h1 {
+    color: rgba(89, 86, 233, 1);
+}
+
+.AboutUs2 h1 {
+    color: rgba(89, 86, 233, 1);
+}
+
+.AboutUs3 h1 {
+    color: rgba(89, 86, 233, 1);
+}
+
+.paragraph{
+    width:80%;
+    height:53%;
+    overflow: hidden;
+}
+
+.AboutUs1 p {
+    text-align: justify;
+}
+
+.AboutUs2 p {
+    text-align: justify;
+}
+
+.AboutUs3 p {
+    text-align: justify;
+
+}
+
+.Viewmore {
+    height: 3rem;
+    margin-top: 1rem;
+}
+
+#email{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    border-radius: 30px;
+  
+}
+
+#phone{
+    margin-top: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    border-radius: 20px;
+    height: 3rem;
+    width: 4rem;
+    
+}
+
+#more{
+    margin-top: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    border-radius: 30px;
+    height: 3rem;
+    width: 5rem;
+}

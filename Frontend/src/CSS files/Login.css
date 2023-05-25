@@ -1,0 +1,40 @@
+.left-section form input {
+  background: rgba(126, 209, 245, 0.11);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 0.8em;
+  width: 368px;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: var(--grey-shade);
+}
+
+.left-section form input:focus {
+  outline: none;
+}
+
+.left-section form {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.forget-password {
+  width: 90%;
+  text-decoration: underline;
+  /* border: solid; */
+  text-align: end;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--grey-shade);
+  text-decoration: none;
+}
+
+.forget-password a {
+  text-decoration: underline;
+  color: var(--grey-shade);
+}

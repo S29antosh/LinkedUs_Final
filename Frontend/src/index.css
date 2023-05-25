@@ -1,0 +1,488 @@
+/* import poppins font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --grey-shade: #A29C9C;
+  --primary-color: #414141;
+
+}
+
+/* smooth behaviour */
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+body {
+  background-color: rgba(217, 217, 217, 0.2);
+  font-family: 'Poppins', sans-serif;
+
+
+
+
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey-shade);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  animation: fade 1s ease-in forwards;
+}
+.welcome img{
+  width: 200px;
+
+}
+.welcome h1{
+  font-size: 2.5rem;
+  font-weight: 400;
+  animation: left 1s ease-in forwards;
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    
+  }
+
+  100% {
+    opacity: 1;
+   
+  }
+  
+}
+  
+
+
+
+
+
+
+.layout {
+  width: 80%;
+  margin: 0px auto;
+  min-height: 100vh;
+  animation: fade 1s ease-in forwards;
+}
+
+Header {
+  padding: 1em;
+}
+
+.navbar {
+  height: 18vh;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+
+  
+}
+
+.logo {
+  /* font-size: 1.1rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: var(--primary-color); */
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 1.5em;
+
+
+
+}
+
+
+
+
+.logo h1 {
+
+
+  margin: 0;
+  padding: 0;
+  font-size: 2.4rem;
+  font-family: "Poppins";
+  font-weight: 450;
+
+  transition: all 0.4s ease-in-out;
+  color: var(--primary-color);
+  animation: logo 2s ease-in-out;
+
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+
+
+.logo img {
+  width: 70px;
+  /* height: 80px;/ */
+  border-radius: 50%;
+
+}
+
+.logo img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+
+.logo Link {
+  color: var(--primary-color);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 4em;
+
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    height: 30vh;
+  }
+
+  /* .nav-links {
+    flex-direction: column;
+    gap: 1em;
+  } */
+  .nav-links ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
+
+
+/* main  */
+main {
+  height: 80vh;
+  width: 100%;
+  margin: 1em;
+  margin: auto;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.userButtons button {
+  background-color: white;
+  color: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+
+  border-radius: 5px;
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 150px;
+  cursor: pointer;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px
+}
+
+.userButtons button:hover {
+  background-color: rgb(226, 83, 31);
+  color: white;
+  transition: all 0.4s ease-in-out;
+
+
+
+}
+
+@media screen and (max-width: 1000px) {
+  .right-section img {
+    display: none;
+  }
+}
+
+
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  align-items: center;
+}
+
+.left-section h1 {
+  text-align: start;
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 70%;
+  color: #414141;
+}
+
+.left-section p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: 70%;
+  color: var(--grey-shade);
+}
+
+.left-section .button {
+  text-align: start;
+  width: 80%;
+  padding-left: 2em;
+}
+
+button {
+
+  padding: 0.7em;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.5em;
+  width: 150px;
+
+  background: #5956E9;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #2f00ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.right-section img {
+  width: 80%;
+  /* height: 100%; */
+
+
+
+}
+
+/* Homepage */
+.grid-container {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 1em;
+}
+
+.grid-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+
+
+}
+
+.grid-left p {
+  font-family: poppins;
+  max-width: 16ch;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.grid-left p b {
+  color: #5956E9;
+}
+
+.grid-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.grid-right img {
+  width: 80%;
+
+  border-radius: 1em;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.grid-container form {
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 1em;
+
+}
+
+.grid-container form input {
+  font-family: poppins;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.93);
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 0.5em;
+  width: 20em;
+}
+
+.grid-container form input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-right img {
+    display: none;
+  }
+
+}
+
+/* Job applied List */
+.Applicants_List {
+  padding: 1.2em;
+
+
+
+  width: 80%;
+  margin: 2em auto;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+}
+
+
+.Applicants_info {
+  display: flex;
+  gap: 2em;
+
+
+
+}
+
+.Applicants_info p {
+  display: flex;
+  flex-direction: column;
+}
+
+.Applicants_info img {
+  display: block;
+  width: 10%;
+}
+
+/* 
+.Container_jobapplied {
+  font-family: poppins, sans-serif;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.Title {
+  font-family: poppins, sans-serif;
+  padding-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mid {
+  padding-top: 10%;
+  font-family: poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.Info_block {
+  background-color: rgba(255, 255, 255, 1);
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(1px 1px px rgba(0, 0, 0, 0.25));
+
+  padding: 1rem;
+  font-size: larger;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 12%;
+}
+ */
+
+/* JobList */
+
+/*                                           css for Job List Page                                             */

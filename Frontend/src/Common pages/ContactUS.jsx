@@ -30,10 +30,13 @@ export default function ContactUs() {
               <h1>Email</h1>
               <div className="paragraph">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolores fugit quos sit amet ipsam possimus dolore vitae
-                  quisquam totam iure, nesciunt exercitationem, quibusdam libero
-                  ducimus fuga! Incidunt libero itaque quam!
+                  <ul>
+                    <li>Santosh: ymanoutube@gmail.com</li>
+                    <li>Anuja:</li>
+                    <li>Krishita: pandeykrishita02@gmail.com</li>
+                    <li>Aayush: aayushpokhreld@gmail.com</li>
+                    <li>Sunidhi: sunidhisharma3002@gmail.com</li>
+                  </ul>
                 </p>
               </div>
               <img src="\Images\\Email.png" alt="img" id="email" />
@@ -47,11 +50,13 @@ export default function ContactUs() {
               <h1>Phone Number ?</h1>
               <div className="paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                  officia at commodi, accusantium, doloribus repellat quae
-                  dignissimos pariatur, tenetur doloremque perferendis
-                  voluptatem molestias itaque earum eveniet quaerat optio
-                  nesciunt porro.
+                  <ul>
+                    <li>Santosh: ymanoutube@gmail.com</li>
+                    <li>Anuja:</li>
+                    <li>Krishita: pandeykrishita02@gmail.com</li>
+                    <li>Aayush: aayushpokhreld@gmail.com</li>
+                    <li>Sunidhi: sunidhisharma3002@gmail.com</li>
+                  </ul>
                 </p>
               </div>
               <img src="\Images\\Phone.png" alt="img" id="phone" />
@@ -65,11 +70,13 @@ export default function ContactUs() {
               <h1>More information..</h1>
               <div className="paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reprehenderit praesentium aliquid delectus, voluptatem
-                  quisquam, nemo cumque officia quis vitae, quas a distinctio.
-                  Magnam facilis et voluptatem quo consequuntur corporis
-                  officiis.
+                  <ul>
+                    <li>Santosh: ymanoutube@gmail.com</li>
+                    <li>Anuja:</li>
+                    <li>Krishita: pandeykrishita02@gmail.com</li>
+                    <li>Aayush: aayushpokhreld@gmail.com</li>
+                    <li>Sunidhi: sunidhisharma3002@gmail.com</li>
+                  </ul>
                 </p>
               </div>
               <img src="\Images\\Viewmore.png" alt="img" id="more" />

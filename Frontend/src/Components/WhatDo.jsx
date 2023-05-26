@@ -7,14 +7,14 @@ const WhatDo = ({ closeModal }) => {
         <div className="ModelContent">
           <h1>What Do We Do ?</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            deserunt distinctio mollitia aut at hic reprehenderit consequuntur
-            eveniet voluptas itaque illum numquam eius, illo voluptatibus, quas
-            asperiores vero totam repudiandae. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Optio accusantium obcaecati molestiae,
-            temporibus natus officia nam ipsum velit ipsam numquam illum nihil
-            voluptate veniam distinctio nisi repellendus repellat exercitationem
-            dolores?
+            LinkedUs is a proposed web-based platform designed to provide an
+            interface for job seekers and potential employers. One can know
+            what's new in the market and another created the market.The portal
+            provides a doorway for seekers to find the convenient job according
+            to the skills and knowledge they prosper at. Similarly , the
+            providers can post their vacant jobs with description and view the
+            list of applicants. From there the employers can choose whom to hire
+            for their vacant job.
           </p>
           <button id="ViewMore" onClick={() => closeModal()}>
             Close

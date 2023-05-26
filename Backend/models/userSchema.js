@@ -29,6 +29,14 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  skill: {
+    type: String,
+    required: false,
+  },
+  basicInfo: {
+    type: String,
+    required: false,
+  },
 
   roles: {
     type: String,

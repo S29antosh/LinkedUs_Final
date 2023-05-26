@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../CSS files/Login.css";
 import axios from "axios";
 import Footer from "../Components/Footer";
-import { Navigate } from "react-router-dom";
+
 
 // Stores the user data
 var User = {
@@ -28,7 +28,7 @@ export default function Login() {
 
   const navigate = useNavigate();
 
-  //  Redirects to the homepage if the user is admin
+  
   const LoginUser = async (e) => {
     e.preventDefault();
 
@@ -113,6 +113,8 @@ export default function Login() {
           </div>
         </main>
       </div>
+      <Footer />
     </AnimatedPage>
+
   );
 }

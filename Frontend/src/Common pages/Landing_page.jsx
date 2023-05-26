@@ -13,7 +13,7 @@ export default function Landing_page() {
   setTimeout(() => {
     setBodyStyle("block");
     setSplashStyle("none");
-  }, 3000);
+  }, 2000);
 
  
 

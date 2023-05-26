@@ -91,7 +91,7 @@ const Profile = () => {
   return (
     <>
       <div className="layout">
-        <Navigation_Bar />
+        <Navigation_Bar home="Home" profile="Profile" />
         <div className="profile_container">
           <div class="profile_left">
             <div className="profile_image"></div>

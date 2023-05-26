@@ -1,8 +1,9 @@
 import React from "react";
 import "../CSS files/footer.css";
-
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <div>
       <footer
@@ -91,8 +92,18 @@ export default function Footer() {
                   gap: "1rem",
                 }}
               >
-                <button>Sign In</button>
-                <button>Sign Up</button>
+                <button
+                  onClick={() => {
+                    navigate("/login");
+                  }}
+                >
+                  Sign In
+                </button
+                >
+                <button
+                 onClick={() => {
+                  navigate("/register");
+                }}>Sign Up</button>
               </div>
             </ul>
           </div>
@@ -129,15 +140,16 @@ export default function Footer() {
             </p>
           </div>
           <div className="footer-main-right">
-            <h1 style={{
-              textAlign:"start",
-              fontSize:"1.5rem",
-              fontWeight:"bold",
-              padding:"1rem"
-
-
-
-            }}>Follow Us</h1>
+            <h1
+              style={{
+                textAlign: "start",
+                fontSize: "1.5rem",
+                fontWeight: "bold",
+                padding: "1rem",
+              }}
+            >
+              Follow Us
+            </h1>
             <div
               className="social-media"
               style={{
@@ -150,7 +162,6 @@ export default function Footer() {
                 margin: "1rem",
               }}
             >
-              
               <img src="\Images\facebook.svg" alt="facebook" />
               <img src="\Images\instagram.svg" alt="instagram" />
               <img src="\Images\twitter.svg" alt="twitter" />

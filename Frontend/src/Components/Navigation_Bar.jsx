@@ -41,17 +41,19 @@ export default function Navigation_Bar(props) {
           <div className="nav-links">
             <div className="toggleScreen" style={toggle}>
               <ul>
+                
                 <li>
-                  <Link to="/Login">{props.name}</Link>{" "}
+                  <Link to="/homepage">{props.home}</Link>{" "}
                 </li>
+                <li>
+                  <Link to="/Profile">{props.profile} </Link>{" "}
+                </li>
+
                 <li>
                   <Link to="/Contactus">Contact</Link>
                 </li>
                 <li>
                   <Link to="/Aboutus">About Us</Link>{" "}
-                </li>
-                <li>
-                <Link to="/Profile">{props.profile} </Link>{" "} 
                 </li>
               </ul>
             </div>
@@ -80,7 +82,3 @@ export default function Navigation_Bar(props) {
     </div>
   );
 }
-
-
-   
-

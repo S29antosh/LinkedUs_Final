@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
   console.log(41);
 
   //checking if user fill all the info
-  if (!name || !email || !password || !repassword||!role) {
+  if (!name || !email || !password || !repassword) {
     return res.status(422).json({ error: "Please fill all info" });
   }
   console.log(41);
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
 
       //or else this one
       console.log(1);
-      const newUser = new User({ name, email, password, repassword ,role});
+      const newUser = new User({ name, email, password, repassword});
       console.log(newUser);
       console.log(1);
       try {

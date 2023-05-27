@@ -3,7 +3,7 @@ const router = express.Router();
 import bcrypt from "bcrypt";
 
 // //DB
-import DB from '../config/DB.js'
+
 
 // //schema
 import Login from "../models/userSchema.js";

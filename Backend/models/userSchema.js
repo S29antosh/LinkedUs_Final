@@ -3,8 +3,7 @@ const { Schema } = mongoose;
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-
-let token ="";
+let token = "";
 //schema
 
 let SECRETE_KEY = "asdfghjklqwertyuiopzxcvbnmqwerrttyuioasdfghjjkl";
@@ -38,21 +37,17 @@ const userSchema = new mongoose.Schema({
     required: false,
   },
 
-  roles: {
-    type: String,
-    required:false,
-  },
-     image: {
-      data: {
-        type: String,
-        required: false
-      },
-      contentType: {
-        type: String,
-        required: false
-      }
+  image: {
+    data: {
+      type: String,
+      required: false,
     },
-    
+    contentType: {
+      type: String,
+      required: false,
+    },
+  },
+
   //array of object
   tokens: [
     {
@@ -80,55 +75,43 @@ userSchema.methods.generateAuthToken = async function () {
     //finally genetrating a token
     //payload-unique,secretkey
     //here this._id is referreing to the email of login
-    //object id converting into string 
+    //object id converting into string
     token = jwt.sign({ _id: this._id.toString() }, SECRETE_KEY);
     //to add the token in database from token
     this.tokens = this.tokens.concat({ token: token });
     await this.save();
     console.log(token);
-   
+
     return token;
   } catch (err) {
-   
-    
-   console.log("the error part"+err);
+    console.log("the error part" + err);
   }
 };
 
-  
-userSchema.methods.userid= async function()
-{
-  try{
+userSchema.methods.userid = async function () {
+  try {
     const decoded = jwt.verify(token, SECRETE_KEY);
     const userId = decoded._id;
     console.log(userId);
     User.findById(userId, "name email")
-  .then(user => 
-    {
-    if (!user)
-    {
-      console.log("User not found");
-    
-    }
+      .then((user) => {
+        if (!user) {
+          console.log("User not found");
+        }
 
-    const { name, email } = user;
-    console.log("Name:", name);
-    console.log("Email:", email);
-  })
-  .catch(err => {
-    console.error(err);
-  })
- 
+        const { name, email } = user;
+        console.log("Name:", name);
+        console.log("Email:", email);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
 
-        return  userId ;
-  }
-  catch(err){
+    return userId;
+  } catch (err) {
     console.log(err);
-
   }
-  
-  }
-
+};
 
 const User = mongoose.model("User", userSchema);
 

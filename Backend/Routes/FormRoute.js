@@ -46,4 +46,17 @@ router.post("/", async (req, res) => {
   }
 });
 
+
+// Delete all the applicants
+router.delete("/", async (req, res) => {
+  try {
+    await Applicant.deleteMany();
+    res.json("All applicants deleted successfully!");
+  } catch (err) {
+    res.status(400).json("Error: " + err);
+  }
+});
+
+
+
 export default router;

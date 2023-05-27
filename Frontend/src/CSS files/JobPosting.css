@@ -1,7 +1,18 @@
+.Job-post{
+    margin: 1em;
+    padding: 1em;
+   
+   
+
+
+    
+}
+
 form input{
     background: rgba(126, 209, 245, 0.11);
     border: 1px solid rgba(0, 0, 0, 0.2);
    border-radius: 14px;
+   width: 50%;
     padding: 0.8em;
     
     font-size: 1rem;
@@ -12,3 +23,15 @@ form input{
 form input:focus{
     outline: none;
 }
+
+.Job-post form section{
+    display: flex;
+    width: 50%;
+    gap: 1em;
+    margin: 1em 0;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+

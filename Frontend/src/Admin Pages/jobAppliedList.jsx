@@ -3,6 +3,7 @@ import Applicants from "./Applicants";
 import AdminNavbar from "../Components/AdminNavbar";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "../CSS files/Applicants_List.css";
 
 export default function JobApplication() {
   const [data, setData] = useState([]);
@@ -19,14 +20,38 @@ export default function JobApplication() {
       });
   }, []);
 
+  
+
+ 
+
   return (
-    <div>
+    <>
       <AdminNavbar />
+    <div className="layout">
       {/* <h1 style={{ textAlign: "center",
      
     
     }}>Applicants</h1> */}
-      <hr />
+      
+      <div className="removeAll"
+      
+      >
+        <button className="removeButton"
+          onClick={() => {
+            axios
+              .delete("http://localhost:3000/api/applicants")
+              .then((res) => {
+                console.log(res.data);
+                setData([]);
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+          }}
+        >
+          Remove All
+        </button>
+      </div>
       <div>
         {data.map((applicant) => {
           return (
@@ -41,11 +66,8 @@ export default function JobApplication() {
             />
           );
         })}
-
-       
-       
-        
       </div>
     </div>
+    </>
   );
 }

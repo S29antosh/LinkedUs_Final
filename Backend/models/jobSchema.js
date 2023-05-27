@@ -24,6 +24,14 @@ const jobSchema = new Schema({
     type: Date,
     required: true,
   },
+  jobType: {
+    type: String,
+    required: true,
+  },
+  location: {
+    type: String,
+    required: true,
+  },
 });
 
 const Job = mongoose.model("Job", jobSchema);

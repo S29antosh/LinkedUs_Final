@@ -16,9 +16,14 @@
 }
 
 /* smooth behaviour */
+
 html {
   scroll-behavior: smooth;
 }
+
+/* global styles */
+
+
 
 img {
   width: 100%;
@@ -67,11 +72,13 @@ img {
   background-color: #ffffff;
   animation: fade 1s ease-in forwards;
 }
-.welcome img{
+
+.welcome img {
   width: 200px;
 
 }
-.welcome h1{
+
+.welcome h1 {
   font-size: 2.5rem;
   font-weight: 400;
   animation: left 1s ease-in forwards;
@@ -80,16 +87,16 @@ img {
 @keyframes left {
   0% {
     opacity: 0;
-    
+
   }
 
   100% {
     opacity: 1;
-   
+
   }
-  
+
 }
-  
+
 
 
 
@@ -101,6 +108,7 @@ img {
   margin: 0px auto;
   min-height: 100vh;
   animation: fade 1s ease-in forwards;
+  scroll-behavior: smooth;
 }
 
 Header {
@@ -115,7 +123,7 @@ Header {
   align-self: center;
   align-items: center;
 
-  
+
 }
 
 .logo {
@@ -334,7 +342,7 @@ button:hover {
   gap: 1em;
 }
 
-.navigation_bar{
+.navigation_bar {
   width: 80%;
   margin: 0px auto;
 }

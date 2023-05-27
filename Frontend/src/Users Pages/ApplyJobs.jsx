@@ -8,6 +8,7 @@ export default function ApplyJobs() {
   const [skills, setSkills] = useState("");
   const [education, setEducation] = useState("");
   const [email, setEmail] = useState("");
+  const [jobTitle, setjobTitle] = useState("");
 
   const submit = async (e) => {
     e.preventDefault();
@@ -39,8 +40,13 @@ export default function ApplyJobs() {
       profile="Profile"
       />
       <div className="Apply-Jobs">
-        <h1 style={{ textAlign: "center" }}>Apply For Jobs</h1>
+        <h1 style={{ textAlign: "center", fontWeight:"300" }}>Apply For The <b>Job</b> </h1>
         <form onSubmit={submit}>
+          <input type="text"
+          placeholder="Job Title"
+          value={jobTitle}
+          onChange={(e) => setjobTitle(e.target.value)}
+          />
           <input
             type="text"
             placeholder="Full Name"
@@ -72,7 +78,7 @@ export default function ApplyJobs() {
             onChange={(e) => setEmail(e.target.value)}
           />
 
-          <button type="submit">Submit</button>
+          <div className="applyButtons"><button type="submit">Submit</button></div>
         </form>
       </div>
     </div>

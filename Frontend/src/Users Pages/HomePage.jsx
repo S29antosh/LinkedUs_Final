@@ -1,6 +1,6 @@
 import Navigation_Bar from "../Components/Navigation_Bar";
 import React from "react";
-import "../CSS files/HomePage.css";
+
 import AnimatedPage from "../Animation";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";

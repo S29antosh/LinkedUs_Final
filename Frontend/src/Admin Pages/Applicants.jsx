@@ -7,13 +7,15 @@ export default function Applicants(props) {
         <h1
           style={{
             textAlign: "center",
-            color: "#006097",
+            fontWeight: "300",
           }}
         >
           {props.job}
         </h1>
         <div className="Applicants_info">
-          <img src="./Images/Applicants.png" alt="Profile" />
+          <img
+          style={{width:"100px", height:"100px"}}
+          src="./Images/Applicants.png" alt="Profile" />
           <p>
             <section>
               <b>Name:</b> {props.name}

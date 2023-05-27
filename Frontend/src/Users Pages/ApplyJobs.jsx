@@ -19,6 +19,7 @@ export default function ApplyJobs() {
         skills,
         education,
         email,
+        jobTitle,
       };
       await axios.post("http://localhost:3000/api/applicants", newApplicant);
       alert("Applied Successfully");
@@ -27,6 +28,7 @@ export default function ApplyJobs() {
       setExperience("");
       setSkills("");
       setEducation("");
+      setjobTitle("");
 
     } catch (err) {
       alert("Error while applying for job");

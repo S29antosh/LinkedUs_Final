@@ -1,6 +1,10 @@
 import { Schema, model } from "mongoose";
 
 const applicantSchema = new Schema({
+  jobTitle: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,

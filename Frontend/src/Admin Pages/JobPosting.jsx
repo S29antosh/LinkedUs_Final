@@ -3,6 +3,7 @@ import "../CSS files/JobPosting.css";
 import AdminNavbar from "../Components/AdminNavbar";
 import axios from "axios";
 
+
 export default function JobPosting() {
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
@@ -27,6 +28,13 @@ export default function JobPosting() {
       .then((res) => {
         console.log(res);
         alert("Job Posted Successfully");
+        setTitle("");
+        setDescription("");
+        setSalary("");
+        setDate("");
+        setLocation("");
+        setJobType("");
+
       })
       .catch((err) => {
         console.log(err);

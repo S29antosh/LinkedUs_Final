@@ -10,7 +10,7 @@ export default function Register() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [repassword, setrePassword] = React.useState("");
-  const [role, setRoles] = React.useState("");
+  
   const navigate = useNavigate();
 
   const submit = (e) => {
@@ -20,15 +20,14 @@ export default function Register() {
       alert("password and repassword do not match");
       return;
     }
-    console.log("jj");
+    
     const requestData = {
       name: name,
       email: email,
       password: password,
-      role: role,
       repassword: repassword,
     };
-    console.log("jj");
+   
     axios
       .post("http://localhost:3000/api/Register", requestData)
       .then((res) => {
@@ -82,15 +81,7 @@ export default function Register() {
                 setrePassword(e.target.value);
               }}
             ></input>
-            <input
-              type="text"
-              name="role"
-              placeholder="Your Role"
-              value={role}
-              onChange={(e) => {
-                setRoles(e.target.value);
-              }}
-            />
+            
             <button
               style={{
                 marginBottom: "20px",

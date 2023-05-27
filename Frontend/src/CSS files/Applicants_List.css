@@ -5,26 +5,22 @@
 }
 
 .removeAll{
-    position: absolute;
-    padding: 2em;
-    right: 0px;
-
-}
-
-.removeButton{
+    margin-top: 5%;
     padding: 0.4em 0.2em;
-    background-color: #161313;
-    color: white;
-    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
     border-radius: 10px;
     font-size: 1.2rem;
     font-family: poppins;
     cursor: pointer;
+   align-items: center;
+    
+   
+
 }
 
-.removeButton:hover{
-    background-color: #6f6969;
-}
+
 
 
 .Admin_navbar ul{

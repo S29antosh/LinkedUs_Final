@@ -36,6 +36,8 @@ export default function JobApplication() {
       <div className="removeAll"
       
       >
+        <h1>Users Job Application List</h1>
+
         <button className="removeButton"
           onClick={() => {
             axios
@@ -57,7 +59,7 @@ export default function JobApplication() {
           return (
             <Applicants
               key={applicant._id}
-              job="React Developer"
+              job={applicant.jobTitle}
               name={applicant.name}
               Experience={applicant.experience}
               Skills={applicant.skills}

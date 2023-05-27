@@ -15,7 +15,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-
 // post request to submit the application
 router.post("/", async (req, res) => {
   const name = req.body.name;
@@ -25,17 +24,16 @@ router.post("/", async (req, res) => {
   const experience = req.body.experience;
   const skills = req.body.skills;
   const education = req.body.education;
+  const jobTitle = req.body.jobTitle;
   // const date = req.body.date;
 
   const newApplicant = new Applicant({
+    jobTitle,
     name,
     email,
-    // job,
-    // phone,
     experience,
     skills,
     education,
-    // date,
   });
 
   try {
@@ -46,7 +44,6 @@ router.post("/", async (req, res) => {
   }
 });
 
-
 // Delete all the applicants
 router.delete("/", async (req, res) => {
   try {
@@ -56,7 +53,5 @@ router.delete("/", async (req, res) => {
     res.status(400).json("Error: " + err);
   }
 });
-
-
 
 export default router;

@@ -29,15 +29,15 @@ export default function ContactUs() {
             >
               <h1>Email</h1>
               <div className="paragraph">
-                <p>
+                <h2>
                   <ul>
-                    <li>Santosh: ymanoutube@gmail.com</li>
-                    <li>Anuja:</li>
-                    <li>Krishita: pandeykrishita02@gmail.com</li>
-                    <li>Aayush: aayushpokhreld@gmail.com</li>
-                    <li>Sunidhi: sunidhisharma3002@gmail.com</li>
+                    <li>ymanoutube@gmail.com</li>
+                    <li>anuja@gmail.com</li>
+                    <li>pandeykrishita02@gmail.com</li>
+                    <li>aayushpokhreld@gmail.com</li>
+                    <li>sunidhisharma3002@gmail.com</li>
                   </ul>
-                </p>
+                </h2>
               </div>
               <img src="\Images\\Email.png" alt="img" id="email" />
             </motion.div>
@@ -49,15 +49,15 @@ export default function ContactUs() {
             >
               <h1>Phone Number ?</h1>
               <div className="paragraph">
-                <p>
+                <h2>
                   <ul>
-                    <li>Santosh: ymanoutube@gmail.com</li>
-                    <li>Anuja:</li>
-                    <li>Krishita: pandeykrishita02@gmail.com</li>
-                    <li>Aayush: aayushpokhreld@gmail.com</li>
-                    <li>Sunidhi: sunidhisharma3002@gmail.com</li>
+                    <li>9864577279</li>
+                    <li>9825744662</li>
+                    <li>9861590633</li>
+                    <li>9864573758</li>
+                    <li>100</li>
                   </ul>
-                </p>
+                </h2>
               </div>
               <img src="\Images\\Phone.png" alt="img" id="phone" />
             </motion.div>
@@ -69,15 +69,7 @@ export default function ContactUs() {
             >
               <h1>More information..</h1>
               <div className="paragraph">
-                <p>
-                  <ul>
-                    <li>Santosh: ymanoutube@gmail.com</li>
-                    <li>Anuja:</li>
-                    <li>Krishita: pandeykrishita02@gmail.com</li>
-                    <li>Aayush: aayushpokhreld@gmail.com</li>
-                    <li>Sunidhi: sunidhisharma3002@gmail.com</li>
-                  </ul>
-                </p>
+                <p>https://github.com/S29antosh/LinkedUs-2.0</p>
               </div>
               <img src="\Images\\Viewmore.png" alt="img" id="more" />
             </motion.div>

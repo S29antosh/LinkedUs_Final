@@ -38,7 +38,7 @@ export default function Login() {
         email,
         password,
       });
-      console.log("login");
+      
 
       const { id, token, roles, user } = response.data;
       console.log(email);

@@ -15,7 +15,6 @@ export default function Register() {
 
   const submit = (e) => {
     e.preventDefault();
-    console.log("jj");
     if (password !== repassword) {
       alert("password and repassword do not match");
       return;

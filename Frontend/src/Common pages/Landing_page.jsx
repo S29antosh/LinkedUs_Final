@@ -2,7 +2,6 @@ import React from "react";
 import Navigation_Bar from "../Components/Navigation_Bar";
 // import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import AnimatedPage from "../Animation";
 import Footer from "../Components/Footer";
 
 export default function Landing_page() {

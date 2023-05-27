@@ -14,7 +14,7 @@ export default function Jobpage() {
     axios
       .get("http://localhost:3000/api/jobs")
       .then((res) => {
-        console.log(res.data);
+       
         setData(res.data);
       })
       .catch((err) => {

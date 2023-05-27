@@ -16,12 +16,12 @@ router.post("/", async (req, res) => {
   if (!name || !email || !password || !repassword) {
     return res.status(422).json({ error: "Please fill all info" });
   }
-  console.log(41);
+
 
   const userExist = await User.findOne({ email: email });
   if (userExist) {
       //checks whether the user has already made an account or not
-      console.log(1);
+      
       //if yes this executes
       return res.status(422).json({ error: "User already exists" });
   }
@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
       console.log(1);
       const newUser = new User({ name, email, password, repassword});
       console.log(newUser);
-      console.log(1);
+      
       try {
         // Save user to database
         newUser.save();

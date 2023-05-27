@@ -39,3 +39,5 @@ app.use("/api/applicants", ApplicantRoute);    // Anuja Portion
 app.use("/Login", loginRoute);                 // Krishita Portion
 app.use("/api/Register", RegisterRoute);      // Krishita Portion
 app.use("/api/Profile",AboutUs);              // Krishita Portion
+
+//  Index.js 

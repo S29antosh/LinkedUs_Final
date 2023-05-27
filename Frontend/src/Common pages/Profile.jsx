@@ -134,6 +134,7 @@ const Profile = () => {
   };
 
   return (
+    <>
     <div className="layout">
       <Navigation_Bar home="Home" profile="Profile" />
       <div className="profile_container">
@@ -197,8 +198,9 @@ const Profile = () => {
         </form>
       </div>
 
-      <Footer />
     </div>
+      <Footer />
+      </>
   );
 };
 

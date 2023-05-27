@@ -3,10 +3,13 @@ import "../CSS files/JobPosting.css";
 import AdminNavbar from "../Components/AdminNavbar";
 import axios from "axios";
 
+
 export default function JobPosting() {
   const [title, setTitle] = React.useState("");
   const [description, setDescription] = React.useState("");
   const [salary, setSalary] = React.useState("");
+  const [location, setLocation] = React.useState("");
+  const [jobType, setJobType] = React.useState("");
   const [date, setDate] = React.useState(new Date().toISOString().slice(0, 10));
 
   const handleSubmit = (e) => {
@@ -16,12 +19,22 @@ export default function JobPosting() {
       description: description,
       salary: salary,
       date: date,
+      location: location,
+      jobType: jobType,
+      
     };
     axios
       .post("http://localhost:3000/api/jobs", data)
       .then((res) => {
         console.log(res);
         alert("Job Posted Successfully");
+        setTitle("");
+        setDescription("");
+        setSalary("");
+        setDate("");
+        setLocation("");
+        setJobType("");
+
       })
       .catch((err) => {
         console.log(err);
@@ -30,14 +43,12 @@ export default function JobPosting() {
   };
 
   return (
-    <div>
+    <>
       <AdminNavbar />
+    <div className="layout">
       <div
         className="Job-post"
-        style={{
-          paddingTop: "10%",
-          height: "75vh",
-        }}
+        
       >
         <h1
           style={{
@@ -59,6 +70,21 @@ export default function JobPosting() {
             value={salary}
             onChange={(e) => setSalary(e.target.value)}
           />
+          <section>
+          <input type="text" placeholder="Job Type" 
+          value={jobType}
+          onChange={(e) => setJobType(e.target.value)}
+          /> 
+          <input type="text" placeholder="Location"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+          />
+
+           
+            
+            
+           
+          </section>
           <input
             type="text"
             placeholder="Enter Job Description"
@@ -82,5 +108,6 @@ export default function JobPosting() {
         
       </div>
     </div>
+    </>
   );
 }

@@ -21,70 +21,66 @@ export default function Jobpage() {
         console.log(err);
       });
   }, []);
-  
 
   return (
     <>
-    <div className="layout">
-      <Navigation_Bar
-       home="Home"
-       profile="Profile"
-      />
-    
-      <div className="Search-section">
-        <form
+      <div className="layout">
+        <Navigation_Bar home="Home" profile="Profile" />
+
+        <div className="Search-section">
+          <form
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "1rem",
+              flexDirection: "row",
+              margin: "1rem",
+            }}
+          >
+            <input
+              type="text"
+              placeholder="Search for a job"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+
+        <h1 style={{ textAlign: "center" }}>Jobs</h1>
+        <div
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            gap: "1rem",
-            flexDirection: "row",
-            margin: "1rem",
+            flexDirection: "column-reverse",
           }}
         >
-          <input
-            type="text"
-            placeholder="Search for a job"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
-          <button type="submit">Search</button>
-        </form>
-       
+          {
+            // filter the data
+            data
+              .filter((item) => {
+                return search.toLowerCase() === ""
+                  ? item
+                  : item.title.toLowerCase().includes(search);
+              })
+
+              .map((item) => (
+                <Jobs
+                  key={item._id}
+                  title={item.title}
+                  salary={item.salary}
+                  description={item.description}
+                  date={item.date}
+                  jobtype={item.jobType}
+                  location={item.location}
+                />
+              ))
+          }
+        </div>
       </div>
-
-      <h1 style={{ textAlign: "center" }}>Jobs</h1>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column-reverse",
-        }}
-      >
-        {
-          // filter the data
-          data
-            .filter((item) => {
-              return search.toLowerCase() === ""
-                ? item
-                : item.title.toLowerCase().includes(search);
-            })
-
-            .map((item) => (
-              <Jobs
-                key={item._id}
-                title={item.title}
-                salary={item.salary}
-                description={item.description}
-                date={item.date}
-              />
-            ))
-        }
-      </div>
-
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 }

@@ -16,12 +16,16 @@ router.post("/", (req, res) => {
   const description = req.body.description;
   const salary = req.body.salary;
   const date = req.body.date;
+  const jobType = req.body.jobType;
+  const location = req.body.location;
 
   const newJob = new Job({
     title,
     description,
     salary,
     date,
+    jobType,
+    location,
   });
 
   newJob

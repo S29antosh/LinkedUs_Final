@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.removeAll{
+    margin-top: 5%;
+    padding: 0.4em 0.2em;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: poppins;
+    cursor: pointer;
+   align-items: center;
+    
+   
+
+}
+
+
+
+
+.Admin_navbar ul{
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: #000000;
+    color: #fff;
+    height: 5vh;
+}
+
+.Admin_navbar ul li a:hover{
+    color: #ffffff;
+   text-decoration: overline;
+
+    
+}

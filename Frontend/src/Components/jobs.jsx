@@ -1,46 +1,47 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "../CSS files/JobPage.css";
 
 export default function Jobs(props) {
   const navigate = useNavigate();
-  const style = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    gap: "1rem",
-    margin: "1rem",
-    backgroundColor: "#f5f5f5",
-    borderRadius: "1rem",
-    width: "60%",
-    padding: "1rem",
-    boxShadow: "2px 2px 10px 0 rgba(0,0,0,0.2)",
-  };
+
   return (
-    <div style={style}>
-      <h1>{props.title}</h1>
-      <ul
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "1rem",
-        }}
-      >
-        <li>Dhulikhel</li>
-        <li>{props.salary}</li>
-        <li>Full Time</li>
-      </ul>
-      <p>{props.description}</p>
-      <p>{props.date}</p>
-      <button
-        onClick={() => {
-          navigate("/ApplyJobs");
-        }}
-      >
-        Apply
-      </button>
+    <div className="Job__page">
+      <div className="image__section">
+        <img src="./public/Images/job_icon.png" alt="" />
+      </div>
+      <div className="job__section">
+        <div className="job__title">
+          <h1>{props.title}</h1>
+        </div>
+        <div className="job_details">
+          <ul>
+            <li>
+               {props.salary}
+            </li>
+            <li>
+                {props.location}
+            </li>
+            <li>
+               {props.jobtype}
+            </li>
+          </ul>
+          </div>
+        <div className="job__description">
+          <p>{props.description}</p>
+        </div>
+       
+      </div>
+      <div className="job__button">
+          <button
+
+            onClick={() => {
+              navigate("/applyJobs");
+            }}
+          >
+            Apply
+          </button>
+        </div>
     </div>
   );
 }

@@ -80,10 +80,9 @@ export default function JobPosted() {
               >
                 <li>{item.location}</li>
                 <li>{item.salary}</li>
-                <li>{item.type}</li>
+                
               </ul>
               <p>{item.description}</p>
-              <p>{item.date}</p>
               <button onClick={() => handleDelete(item._id)}>Delete</button>
             </div>
           );

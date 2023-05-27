@@ -24,7 +24,14 @@ const Profile = () => {
   const [isEditMode, setIsEditMode] = useState(false);
 
   useEffect(() => {
-    fetchProfileData();
+    // Move the token check inside the useEffect hook
+    const token = localStorage.getItem("token");
+    if (!token) {
+      // Redirect to the login page if the token is not present
+      navigate("/login");
+    } else {
+      fetchProfileData();
+    }
   }, []);
 
   const fetchProfileData = () => {

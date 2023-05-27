@@ -40,15 +40,18 @@ export default function Login() {
       });
       
 
-      const { id, token, roles, user } = response.data;
+    
+      const { token } = response.data;
       console.log(email);
-      localStorage.setItem("id", id || "");
-      localStorage.setItem("userkey", token || "");
+      //before storing the information in locqal storages i
+      // want to delete the infoormation for the past user
+      localStorage.removeItem("token");
+      localStorage.removeItem("email");
+      //to enter the information in localStorages
+      // all the information are stored in string
       localStorage.setItem("token", token || "");
-      localStorage.setItem("roles", roles || "");
-      localStorage.setItem("user", JSON.stringify(user || {}));
-      localStorage.setItem("name", user?.name || "");
       localStorage.setItem("email", email || "");
+
 
       navigate("/Homepage");
     } catch (e) {

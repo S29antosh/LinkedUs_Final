@@ -37,15 +37,19 @@ const userSchema = new mongoose.Schema({
     required: false,
   },
 
+
   image: {
     data: {
       type: String,
       required: false,
+
     },
     contentType: {
       type: String,
       required: false,
     },
+
+
   },
 
   //array of object
@@ -72,6 +76,8 @@ userSchema.pre("save", async function (next) {
 //normal arrow as it doesnt work with this
 userSchema.methods.generateAuthToken = async function () {
   try {
+    // to make the old token delete in every login
+    this.tokens = [];
     //finally genetrating a token
     //payload-unique,secretkey
     //here this._id is referreing to the email of login

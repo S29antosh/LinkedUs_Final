@@ -34,7 +34,10 @@ export default function ApplyJobs() {
 
   return (
     <div className="layout">
-      <Navigation_Bar />
+      <Navigation_Bar
+      home="Home"
+      profile="Profile"
+      />
       <div className="Apply-Jobs">
         <h1 style={{ textAlign: "center" }}>Apply For Jobs</h1>
         <form onSubmit={submit}>

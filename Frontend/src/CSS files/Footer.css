@@ -10,7 +10,7 @@ footer {
 
 h1 {
     font-size: 1.5rem;
-    
+
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -28,7 +28,7 @@ p {
 }
 
 footer li:hover {
-    color: var(--main-color);
+    color: var(--mainn-color);
     cursor: pointer;
 }
 
@@ -69,7 +69,7 @@ footer button:hover {
 
 footer .social-media {
     display: flex;
-    
+
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;

@@ -10,7 +10,9 @@ export default function HomePage() {
   return (
     <AnimatedPage>
       <div>
-        <Navigation_Bar name="Profile" />
+        <div className="navigation_bar">
+          <Navigation_Bar profile="Profile" home="Home" />
+        </div>
         <div className="grid-container">
           <div className="grid-left">
             <p>

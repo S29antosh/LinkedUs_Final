@@ -328,12 +328,17 @@ button:hover {
 
 /* Homepage */
 .grid-container {
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   gap: 1em;
 }
+
+.navigation_bar{
+  width: 80%;
+  margin: 0px auto;
+}
+
 
 .grid-left {
   display: flex;

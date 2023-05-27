@@ -34,8 +34,8 @@ app.get("/", (req, res) => {
 connect();
 
 // setting the routes
-app.use("/api/jobs", jobRoute);
-app.use("/api/applicants", ApplicantRoute);
-app.use("/Login", loginRoute);
-app.use("/api/Register", RegisterRoute);
-app.use("/api/Profile",AboutUs);
+app.use("/api/jobs", jobRoute);                // Anuja Portion
+app.use("/api/applicants", ApplicantRoute);    // Anuja Portion
+app.use("/Login", loginRoute);                 // Krishita Portion
+app.use("/api/Register", RegisterRoute);      // Krishita Portion
+app.use("/api/Profile",AboutUs);              // Krishita Portion

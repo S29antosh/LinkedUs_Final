@@ -3,6 +3,7 @@ import Navigation_Bar from "../Components/Navigation_Bar";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Jobs from "../Components/jobs";
+import Footer from "../Components/Footer";
 
 export default function Jobpage() {
   const [data, setData] = useState([]);
@@ -23,9 +24,13 @@ export default function Jobpage() {
   
 
   return (
-    <div>
-      <Navigation_Bar />
-      <hr />
+    <>
+    <div className="layout">
+      <Navigation_Bar
+       home="Home"
+       profile="Profile"
+      />
+    
       <div className="Search-section">
         <form
           style={{
@@ -77,6 +82,9 @@ export default function Jobpage() {
             ))
         }
       </div>
+
     </div>
+    <Footer />
+    </>
   );
 }
